@@ -11,7 +11,7 @@ import { IngredientsService } from './ingredients.service';
     params:{
         id:{
             field:'id',
-            type: 'number',
+            type: 'string',
             primary:true
         }
     }
