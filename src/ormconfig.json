@@ -1,0 +1,11 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "vianmixt",
+    "password": "StrongPa55word",
+    "database": "cooking",
+    "entities": ["dist/**/*.entity.js"],
+    "synchronize": true,
+    "logging": true
+}
