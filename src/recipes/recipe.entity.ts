@@ -1,5 +1,11 @@
 import { Entity, Column, PrimaryGeneratedColumn} from 'typeorm'
 
+export enum RecipeType {
+    Breakfast = "breakfast",
+    Lunch = "lunch",
+    Dinner = "dinner"
+}
+
 @Entity('recipe')
 export class RecipeEntity {
 	@PrimaryGeneratedColumn('uuid') id: string
@@ -8,7 +14,7 @@ export class RecipeEntity {
     name: string
 
     @Column('varchar', { length: 500 })
-    type: string
+    type: RecipeType
 
     @Column('varchar', { length: 500 })
     ingredients: string
